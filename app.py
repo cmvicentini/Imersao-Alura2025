@@ -20,19 +20,19 @@ st.sidebar.header ("🔍 Filtros")
 
 # Filtro de ano #
 anos_disponiveis=sorted(df['ano'].unique())
-anos_selecionados=st.sidebar.multiselect('Ano', anos_disponiveis, defoult=anos_disponiveis)
+anos_selecionados=st.sidebar.multiselect('Ano', anos_disponiveis, default=anos_disponiveis)
 
 # Filtro de senioridade #
 senioridades_disponiveis=sorted(df['senioridade'].unique())
-senioridades_selecionadas=st.sidebar.multiselect('Senioridade', senioridades_disponiveis, defoult=senioridades_disponiveis)
+senioridades_selecionadas=st.sidebar.multiselect('Senioridade', senioridades_disponiveis, default=senioridades_disponiveis)
 
 # Filtro de tipo de contrato #
 contratos_disponiveis=sorted(df['contrato'].unique())
-contratos_selecionados=st.sidebar.multiselect('Tipo de Contrato', contratos_disponiveis, defoult=contratos_disponiveis)
+contratos_selecionados=st.sidebar.multiselect('Tipo de Contrato', contratos_disponiveis, default=contratos_disponiveis)
 
 # Filtro de tamanho da empresa #
 tamanhos_disponiveis=sorted(df['tamanho_empresa'].unique())
-tamanhos_selecionados=st.sidebar.multiselect('Tamanho da Empresa', tamanhos_disponiveis, defoult=tamanhos_disponiveis)
+tamanhos_selecionados=st.sidebar.multiselect('Tamanho da Empresa', tamanhos_disponiveis, default=tamanhos_disponiveis)
 
 ### Filtrando o DataFrame
 # Os dados são filtrados de acordo com o que for selecionado na barra lateral #
