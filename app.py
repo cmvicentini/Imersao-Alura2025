@@ -37,7 +37,7 @@ tamanhos_selecionados=st.sidebar.multiselect('Tamanho da Empresa', tamanhos_disp
 ### Filtrando o DataFrame
 # Os dados são filtrados de acordo com o que for selecionado na barra lateral #
 
-df_filtrado=[
+df_filtrado=df[
     (df['ano'].isin(anos_selecionados)) &
     (df['senioridade'].isin(senioridades_selecionadas)) &
     (df['contrato'].isin(contratos_selecionados)) &
